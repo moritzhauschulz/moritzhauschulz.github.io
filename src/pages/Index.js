@@ -6,34 +6,27 @@ import Main from '../layouts/Main';
 const Index = () => (
   <Main
     description={
-      "Michael D'Angelo's personal website. New York based Stanford ICME graduate, "
-      + 'VP of Engineering at Smile Identity, co-founder of Arthena and Matroid, and YC Alumni.'
+      "Moritz Hauschulz' website – I am currently a mathematics student at Oxford."
+      + 'I was previously affiliated with LSE, UC Berkeley and Imperial College London.'
     }
   >
     <article className="post" id="index">
       <header>
         <div className="title">
           <h2>
-            <Link to="/">About this site</Link>
+            Welcome to my site!
           </h2>
           <p>
-            A beautiful, responsive, statically-generated, react application
-            written with modern Javascript.
+            I&apos;m Moritz – find out more about what I do and reach out :)
           </p>
         </div>
       </header>
       <p>
         {' '}
-        Welcome to my website. Please feel free to read more{' '}
-        <Link to="/about">about me</Link>, or you can check out my{' '}
-        <Link to="/resume">resume</Link>, <Link to="/projects">projects</Link>,{' '}
-        view <Link to="/stats">site statistics</Link>, or{' '}
+        I am student in mathematics with an interdisciplinary background. To know more, take a look {' '}
+        <Link to="/about">here</Link>, or check out my{' '}
+        <Link to="/resume">resume</Link> and selected <Link to="/projects">projects</Link>. For collaborations, opportunities or if you just want to have a chat, feel free to {' '}
         <Link to="/contact">contact</Link> me.
-      </p>
-      <p>
-        {' '}
-        Source available{' '}
-        <a href="https://github.com/mldangelo/personal-site">here</a>.
       </p>
     </article>
   </Main>

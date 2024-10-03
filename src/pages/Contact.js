@@ -18,11 +18,10 @@ const Contact = () => (
           </h2>
         </div>
       </header>
-      <div className="email-at">
-        <p>Feel free to get in touch. You can email me at: </p>
-        <EmailLink />
+      <div className="contact-info">
+        <p>Feel free to get in touch, for example at <a href="mailto:moritz.hauschulz@stx.ox.ac.uk">moritz.hauschulz@stx.ox.ac.uk</a>.</p>
+        <ContactIcons />
       </div>
-      <ContactIcons />
     </article>
   </Main>
 );
