@@ -6,19 +6,23 @@ import Main from '../layouts/Main';
 import Education from '../components/Resume/Education';
 import Experience from '../components/Resume/Experience';
 import Skills from '../components/Resume/Skills';
+import Grades from '../components/Resume/Grades';
 import Courses from '../components/Resume/Courses';
 import References from '../components/Resume/References';
 
 import courses from '../data/resume/courses';
 import degrees from '../data/resume/degrees';
 import work from '../data/resume/work';
-import { skills, categories } from '../data/resume/skills';
+import { skills, skill_categories } from '../data/resume/skills';
+import { grades, grade_categories } from '../data/resume/grades';
+
 
 // NOTE: sections are displayed in order defined.
 const sections = {
   Education: () => <Education data={degrees} />,
   Experience: () => <Experience data={work} />,
-  Skills: () => <Skills skills={skills} categories={categories} />,
+  Skills: () => <Skills skills={skills} categories={skill_categories} />,
+  Grades: () => <Grades grades={grades} categories={grade_categories} />,
   Courses: () => <Courses data={courses} />,
   References: () => <References />,
 };

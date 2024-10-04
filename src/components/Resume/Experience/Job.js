@@ -37,7 +37,7 @@ const Job = ({
     {highlights ? (
       <ul className="points">
         {highlights.map((highlight) => (
-          <li key={highlight}>{highlight}</li>
+          <li key={highlight} dangerouslySetInnerHTML={{ __html: highlight }} /> // Using dangerouslySetInnerHTML
         ))}
       </ul>
     ) : null}
