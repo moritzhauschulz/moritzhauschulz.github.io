@@ -1,233 +1,158 @@
 const grades = [
   {
-    title: 'Spanish',
-    competency: 4,
-    category: ['Natural Languages'],
+    title: 'ST102 – Elementary Statistical Theory',
+    competency: 93,
+    category: ['LSE'],
   },
   {
-    title: 'English',
-    competency: 5,
-    category: ['Natural Languages'],
+    title: 'EC100 – Economics A',
+    competency: 83,
+    category: ['LSE'],
   },
   {
-    title: 'German',
-    competency: 5,
-    category: ['Natural Languages'],
+    title: 'MA103 – Introduction to Abstract Mathematics',
+    competency: 76,
+    category: ['LSE'],
   },
   {
-    title: 'Python',
-    competency: 4,
-    category: ['Programming Languages'],
+    title: 'MA100 – Mathematical Methods',
+    competency: 74,
+    category: ['LSE'],
   },
   {
-    title: 'PyTorch',
-    competency: 4,
-    category: ['Programming Languages'],
+    title: 'EC210 – Macroeconomic Principles',
+    competency: 89,
+    category: ['LSE'],
   },
   {
-    title: 'Java',
-    competency: 3,
-    category: ['Programming Languages'],
+    title: 'EC202 – Microeconomic Principles II',
+    competency: 80,
+    category: ['LSE'],
   },
   {
-    title: 'Solidity',
-    competency: 2,
-    category: ['Programming Languages'],
+    title: 'EC221 – Principles of Econometrics',
+    competency: 75,
+    category: ['LSE'],
   },
   {
-    title: 'SQL',
-    competency: 3,
-    category: ['Programming Languages'],
+    title: 'MA203 – Real Analysis',
+    competency: 95,
+    category: ['LSE'],
   },
   {
-    title: 'ElasticSearch',
-    competency: 2,
-    category: ['Web Development', 'Databases'],
+    title: 'MA210 – Discrete Mathematics',
+    competency: 100,
+    category: ['LSE'],
   },
   {
-    title: 'PostgreSQL/SQLite3/SQL/Redshift',
-    competency: 4,
-    category: ['Web Development', 'Databases', 'Languages'],
+    title: 'EC309 – Econometric Theory',
+    competency: 83,
+    category: ['LSE'],
   },
   {
-    title: 'Redis',
-    competency: 3,
-    category: ['Web Development', 'Databases'],
+    title: 'EC310 – Behavioural Economics',
+    competency: 77,
+    category: ['LSE'],
   },
   {
-    title: 'Deep Learning',
-    competency: 4,
-    category: ['ML Engineering'],
+    title: 'EC331 – Quantitative Thesis',
+    competency: 73,
+    category: ['LSE'],
   },
   {
-    title: 'NLP',
-    competency: 4,
-    category: ['ML Engineering'],
+    title: 'MA211 – Algebra and Number Theory',
+    competency: 88,
+    category: ['LSE'],
   },
   {
-    title: 'Express.JS',
-    competency: 2,
-    category: ['Web Development', 'Javascript'],
+    title: 'MA317 – Complex Analysis',
+    competency: 51,
+    category: ['LSE'],
   },
   {
-    title: 'D3',
-    competency: 2,
-    category: ['Web Development', 'Javascript'],
+    title: 'COMPSCI 61A – Structure and Interpretation of Computer Programs',
+    competency: 13.20, // B+
+    category: ['UC Berkeley'],
   },
   {
-    title: 'Flask',
-    competency: 3,
-    category: ['Web Development', 'Python'],
+    title: 'MATH 110 – Linear Algebra',
+    competency: 16.00, // A
+    category: ['UC Berkeley'],
   },
   {
-    title: 'FastAPI',
-    competency: 3,
-    category: ['Web Development', 'Python'],
+    title: 'MATH 126 – Introduction to Partial Differential Equations',
+    competency: 'P', // Pass
+    category: ['UC Berkeley'],
   },
   {
-    title: 'Git/Mercurial',
-    competency: 3,
-    category: ['Tools'],
+    title: 'MATH 202A – Topology & Analysis',
+    competency: 12.00, // B
+    category: ['UC Berkeley'],
   },
   {
-    title: 'Kubernetes',
-    competency: 2,
-    category: ['Tools', 'Data Engineering'],
+    title: 'COMPSCI 61B – Data Structures',
+    competency: 16.00, // A
+    category: ['UC Berkeley'],
   },
   {
-    title: 'Google Cloud Compute',
-    competency: 2,
-    category: ['Tools', 'Web Development'],
+    title: 'MATH 114 – Abstract Algebra II',
+    competency: 'P', // Pass
+    category: ['UC Berkeley'],
   },
   {
-    title: 'AWS',
-    competency: 3,
-    category: ['Tools', 'Web Development'],
+    title: 'MATH 136 – Incompleteness and Undecidability',
+    competency: 14.80, // A-
+    category: ['UC Berkeley'],
+  },
+  // {
+  //   title: 'MATH 214 – Differential Topology',
+  //   competency: 'NP', // No Pass
+  //   category: ['UC Berkeley'],
+  // },
+  {
+    title: 'COMP70005 – Complexity',
+    competency: 84.0,
+    category: ['Imperial'],
   },
   {
-    title: 'Docker',
-    competency: 3,
-    category: ['Tools', 'Data Engineering'],
+    title: 'COMP70015 – Mathematics for Machine Learning',
+    competency: 83.9,
+    category: ['Imperial'],
   },
   {
-    title: 'AWS Lambda',
-    competency: 3,
-    category: ['Tools', 'Web Development'],
+    title: 'COMP70022 – Scalable Systems and Data',
+    competency: 73.0,
+    category: ['Imperial'],
   },
   {
-    title: 'Numpy',
-    competency: 3,
-    category: ['Data Science', 'Data Engineering', 'Python', 'ML Engineering'],
+    title: 'COMP70028 – Reinforcement Learning',
+    competency: 74.19,
+    category: ['Imperial'],
   },
   {
-    title: 'Numba',
-    competency: 2,
-    category: ['Data Science', 'Data Engineering', 'Python'],
+    title: 'COMP70007 – Computational Optimisation',
+    competency: 62.0,
+    category: ['Imperial'],
   },
   {
-    title: 'Tensorflow + Keras',
-    competency: 3,
-    category: ['ML Engineering', 'Python'],
+    title: 'COMP70010 – Deep Learning',
+    competency: 82.16,
+    category: ['Imperial'],
+  },
+  // {
+  //   title: 'COMP70016 – Natural Language Processing',
+  //   competency: 'Absent',
+  //   category: ['Imperial'],
+  // },
+  {
+    title: 'COMP70021 – Quantum Computing',
+    competency: 84.13,
+    category: ['Imperial'],
   },
   {
-    title: 'PyTorch',
-    competency: 3,
-    category: ['ML Engineering', 'Python'],
-  },
-  {
-    title: 'Jupyter',
-    competency: 3,
-    category: ['Data Science', 'Python'],
-  },
-  {
-    title: 'Typescript',
-    competency: 3,
-    category: ['Web Development', 'Languages', 'Javascript'],
-  },
-  {
-    title: 'HTML + SASS/SCSS/CSS',
-    competency: 3,
-    category: ['Web Development', 'Languages'],
-  },
-  {
-    title: 'Python',
-    competency: 5,
-    category: ['Languages', 'Python', 'ML Engineering'],
-  },
-  {
-    title: 'Ruby',
-    competency: 2,
-    category: ['Languages'],
-  },
-  {
-    title: 'Ruby on Rails',
-    competency: 3,
-    category: ['Web Development', 'Languages'],
-  },
-  {
-    title: 'C++',
-    competency: 1,
-    category: ['Languages'],
-  },
-  {
-    title: 'Julia',
-    competency: 2,
-    category: ['Languages'],
-  },
-  {
-    title: 'MATLAB',
-    competency: 2,
-    category: ['Languages'],
-  },
-  {
-    title: 'R',
-    competency: 2,
-    category: ['Languages'],
-  },
-  {
-    title: 'Data Visualization',
-    competency: 3,
-    category: ['Data Science', 'Javascript'],
-  },
-  {
-    title: 'GraphQL',
-    competency: 2,
-    category: ['Web Development', 'Databases'],
-  },
-  {
-    title: 'Pandas',
-    competency: 5,
-    category: ['Data Engineering', 'ML Engineering', 'Python'],
-  },
-  {
-    title: 'Matplotlib',
-    competency: 3,
-    category: ['Data Engineering', 'ML Engineering', 'Python'],
-  },
-  {
-    title: 'Scikit-Learn',
-    competency: 4,
-    category: ['Data Engineering', 'ML Engineering', 'Python'],
-  },
-  {
-    title: 'Spark',
-    competency: 2,
-    category: ['Data Engineering', 'ML Engineering'],
-  },
-  {
-    title: 'Dagster',
-    competency: 2,
-    category: ['Data Engineering', 'Python', 'ML Engineering'],
-  },
-  {
-    title: 'Mypy',
-    competency: 3,
-    category: ['Python'],
-  },
-  {
-    title: 'Pylint',
-    competency: 4,
-    category: ['Data Engineering', 'Python'],
+    title: 'COMP70105 – Deep Graph-Based Learning',
+    competency: 82.91,
+    category: ['Imperial'],
   },
 ].map((skill) => ({ ...skill, category: skill.category.sort() }));
 
@@ -247,11 +172,10 @@ const colors = [
   '#64cb7b',
 ];
 
-const grade_categories = [...new Set(grades.flatMap(({ category }) => category))]
-  .sort()
-  .map((category, index) => ({
-    name: category,
-    color: colors[index],
-  }));
+const grade_categories = [
+  { name: 'LSE', color: '#6968b3', maxScale: 100 },
+  { name: 'UC Berkeley', color: '#37b1f5', maxScale: 16 },
+  { name: 'Imperial', color: '#40494e', maxScale: 100 },
+];
 
 export { grade_categories, grades };

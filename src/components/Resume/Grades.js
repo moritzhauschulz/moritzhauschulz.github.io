@@ -4,6 +4,11 @@ import PropTypes from 'prop-types';
 import CategoryButton from './Grades/CategoryButton';
 import GradeBar from './Grades/GradeBar';
 
+const categories = [
+  { name: 'LSE', color: '#FF5733', maxScale: 100 },
+  { name: 'UC Berkeley', color: '#3375FF', maxScale: 16 },
+  { name: 'Imperial', color: '#33FF57', maxScale: 100 },
+];
 const Grades = ({ grades, categories }) => {
   const initialButtons = Object.fromEntries(
     [['All', false]].concat(categories.map(({ name }) => [name, false])),
@@ -25,30 +30,63 @@ const Grades = ({ grades, categories }) => {
     setButtons(newButtons);
   };
 
+  const isNumeric = (value) => !isNaN(value) && value !== null && value !== undefined;
+
   const getRows = () => {
-    // search for true active categories
+    // Search for the active categories
     const actCat = Object.keys(buttons).reduce(
       (cat, key) => (buttons[key] ? key : cat),
       'All',
     );
 
     const comparator = (a, b) => {
-      let ret = 0;
-      if (a.competency > b.competency) ret = -1;
-      else if (a.competency < b.competency) ret = 1;
-      else if (a.category[0] > b.category[0]) ret = -1;
-      else if (a.category[0] < b.category[0]) ret = 1;
-      else if (a.title > b.title) ret = 1;
-      else if (a.title < b.title) ret = -1;
-      return ret;
+      const aIsNumeric = isNumeric(a.competency);
+      const bIsNumeric = isNumeric(b.competency);
+
+      // Non-numeric grades go to the bottom
+      if (!aIsNumeric && bIsNumeric) return 1;
+      if (aIsNumeric && !bIsNumeric) return -1;
+
+      // For numeric grades, sort by percentage
+      if (aIsNumeric && bIsNumeric) {
+        // Find the category and maxScale for each grade
+        const aCategory = categories.find((cat) => a.category.includes(cat.name));
+        const bCategory = categories.find((cat) => b.category.includes(cat.name));
+        const aMaxScale = aCategory ? aCategory.maxScale : 100;
+        const bMaxScale = bCategory ? bCategory.maxScale : 100;
+
+        // Calculate the percentage for each grade
+        const aPercentage = (a.competency / aMaxScale) * 100;
+        const bPercentage = (b.competency / bMaxScale) * 100;
+
+        if (aPercentage > bPercentage) return -1;
+        if (aPercentage < bPercentage) return 1;
+      }
+
+      // Sort non-numeric grades by title as a fallback
+      if (a.title > b.title) return 1;
+      if (a.title < b.title) return -1;
+
+      return 0;
     };
 
     return grades
       .sort(comparator)
       .filter((grade) => actCat === 'All' || grade.category.includes(actCat))
-      .map((grade) => (
-        <GradeBar categories={categories} data={grade} key={grade.title} />
-      ));
+      .map((grade) => {
+        // Find the maxScale for the grade's category
+        const gradeCategory = categories.find((cat) => grade.category.includes(cat.name));
+        const maxScale = gradeCategory ? gradeCategory.maxScale : 100; // Default to 100 if not found
+
+        return (
+          <GradeBar
+            categories={categories}
+            data={grade}
+            key={grade.title}
+            maxScale={maxScale}
+          />
+        );
+      });
   };
 
   const getButtons = () => Object.keys(buttons).map((key) => (
@@ -74,6 +112,9 @@ const Grades = ({ grades, categories }) => {
     </div>
   );
 };
+
+
+
 
 Grades.propTypes = {
   grades: PropTypes.arrayOf(

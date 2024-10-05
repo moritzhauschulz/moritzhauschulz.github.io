@@ -20,10 +20,10 @@ const work = [
     endDate: '2023-09-30',
     summary: 'First employee at Alexandria Media, a start-up supported by LSE Innovation, focusing on digitalizing media licensing through innovative smart-contracts.',
     highlights: [
-      'Shaped a shared vision within the engineering team, based on input from major UK and US studios.',
-      'Developed a modular framework to streamline the contracting workflow in the film industry in cooperation with major UK law firm.',
-      `Drove the implementation of a digital twin agreement that is both private and cryptographically verifiable to all parties based on the <a href="https://hedera.com/">Hedera</a> platform.`,
-      'Built and launched MVP for showcase to new clients and investors.'
+      'Shaped a shared vision within the engineering team, based on input from major UK and US studios',
+      'Developed a modular framework to streamline the contracting workflow in the film industry in cooperation with major UK law firm',
+      `Drove the implementation of a digital twin agreement that is both private and cryptographically verifiable to all parties based on the <a href="https://hedera.com/">Hedera</a> platform`,
+      'Built and launched MVP for showcase to new clients and investors'
     ],
   },
   {
@@ -32,7 +32,7 @@ const work = [
     url: 'https://cep.lse.ac.uk/',
     startDate: '2020-10-01',
     endDate: '2022-09-30',
-    summary: `Data analytics for the policing and crime research group (PI: Tom Kirchmaier)`,
+    summary: `Data analytics for the policing and crime research group (PI: Tom Kirchmaier).`,
     highlights: [
       'Development of a convolutional neural network architecture for EPSRC research grant application',
       'Analysis of statistical methods used for crime data by UK authorities, reporting to HMICFRS',

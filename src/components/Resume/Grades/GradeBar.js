@@ -1,19 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const GradeBar = ({ data, categories }) => {
+const GradeBar = ({ data, categories, maxScale = 100 }) => {
   const { category, competency, title } = data;
 
-  // TODO: Consider averaging colors
+  // Find the background color for the title
   const titleStyle = {
     background: categories
       .filter((cat) => category.includes(cat.name))
       .map((cat) => cat.color)[0],
   };
 
+  // Handle non-numeric grades (like 'P', 'Absent')
+  const isNumericGrade = !isNaN(competency);
+  const barWidth = isNumericGrade ? (competency / maxScale) * 100 : 100; // Full bar for non-numeric grades
+
   const barStyle = {
     ...titleStyle,
-    width: `${String(Math.min(100, Math.max(competency, 0)))}%`,
+    width: `${barWidth}%`,
   };
 
   return (
@@ -22,7 +26,9 @@ const GradeBar = ({ data, categories }) => {
         <span>{title}</span>
       </div>
       <div className="skillbar-bar" style={barStyle} />
-      <div className="skill-bar-percent">{competency} / 5</div>
+      <div className="skill-bar-percent">
+        {isNumericGrade ? `${competency} / ${maxScale}` : competency}
+      </div>
     </div>
   );
 };

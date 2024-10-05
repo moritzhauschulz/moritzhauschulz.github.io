@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Course from './Courses/Course';
+import Other from './Other/Other';
 
-const getRows = (courses) => courses
+const getRows = (others) => others
   .sort((a, b) => {
     let ret = 0;
     if (a.university > b.university) ret = -1;
@@ -12,25 +12,25 @@ const getRows = (courses) => courses
     else if (a.number < b.number) ret = -1;
     return ret;
   })
-  .map((course, idx) => (
-    <Course
-      data={course}
-      key={course.title}
-      last={idx === courses.length - 1}
+  .map((other, idx) => (
+    <Other
+      data={other}
+      key={other.title}
+      last={idx === others.length - 1}
     />
   ));
 
-const Courses = ({ data }) => (
-  <div className="courses">
-    <div className="link-to" id="courses" />
+const Others = ({ data }) => (
+  <div className="others">
+    <div className="link-to" id="others" />
     <div className="title">
-      <h3>Selected Courses</h3>
+      <h3>Other Activities and Awards</h3>
     </div>
-    <ul className="course-list">{getRows(data)}</ul>
+    <ul className="other-list">{getRows(data)}</ul>
   </div>
 );
 
-Courses.propTypes = {
+Others.propTypes = {
   data: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
@@ -41,8 +41,8 @@ Courses.propTypes = {
   ),
 };
 
-Courses.defaultProps = {
+Others.defaultProps = {
   data: [],
 };
 
-export default Courses;
+export default Others;

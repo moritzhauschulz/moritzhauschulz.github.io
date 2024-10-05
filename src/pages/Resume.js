@@ -7,10 +7,10 @@ import Education from '../components/Resume/Education';
 import Experience from '../components/Resume/Experience';
 import Skills from '../components/Resume/Skills';
 import Grades from '../components/Resume/Grades';
-import Courses from '../components/Resume/Courses';
+import Courses from '../components/Resume/Other';
 import References from '../components/Resume/References';
 
-import courses from '../data/resume/courses';
+import courses from '../data/resume/other';
 import degrees from '../data/resume/degrees';
 import work from '../data/resume/work';
 import { skills, skill_categories } from '../data/resume/skills';
