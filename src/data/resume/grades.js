@@ -173,9 +173,9 @@ const colors = [
 ];
 
 const grade_categories = [
-  { name: 'LSE', color: '#6968b3', maxScale: 100 },
-  { name: 'UC Berkeley', color: '#37b1f5', maxScale: 16 },
-  { name: 'Imperial', color: '#40494e', maxScale: 100 },
+  { name: 'LSE', color: '#AE1C28', maxScale: 100 },
+  { name: 'UC Berkeley', color: '#FDB515', maxScale: 16 },
+  { name: 'Imperial', color: '#002147', maxScale: 100 },
 ];
 
 export { grade_categories, grades };
