@@ -18,7 +18,15 @@ const Projects = () => (
         </div>
       </header>
       {data.map((project) => (
-        <Cell data={project} key={project.title} />
+        <Cell data={project} key={project.title}>
+          {project.link.endsWith('.pdf') ? (
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
+              {project.title}
+            </a>
+          ) : (
+            <Link to={project.link}>{project.title}</Link>
+          )}
+        </Cell>
       ))}
     </article>
   </Main>
