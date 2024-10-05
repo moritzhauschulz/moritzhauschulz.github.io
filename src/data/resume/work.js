@@ -34,7 +34,7 @@ const work = [
     endDate: '2022-09-30',
     summary: `Data analytics for the policing and crime research group (PI: Tom Kirchmaier).`,
     highlights: [
-      'Development of a convolutional neural network architecture for EPSRC research grant application',
+      'Proposal for code classification architecture based on NLP techniques for EPSRC research grant application',
       'Analysis of statistical methods used for crime data by UK authorities, reporting to HMICFRS',
       'Development of kernel models for the impact of bombs on housing stock in Python and QGIS',
       'Econometric analysis of impact of different social housing types on crime (project available on <a href=https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3521766>SSRN </a>)',

@@ -1,11 +1,11 @@
 const other = [
 {
     title: 'Scholarship',
-    description: 'I am fortunate to have been supported by the Stiftung der Deutschen Wirtschaft (sdw) during both my BSc and MSc studies. I try to give back as the current president of the UK group of scholars, coordinating event planning and member integration.',
+    description: 'I am fortunate to have been supported by the <a href=https://www.sdw.org/>Stiftung der Deutschen Wirtschaft</a> (sdw) during both my BSc and MSc studies. I try to give back as the current president of the UK group of scholars, coordinating event planning and member integration.',
     },
 {
     title: 'Physics Award',
-    description: `Perhaps explaining my late pivot to a STEM subject, I achieved the highest possible grade in my Physics exam in the German Abitur for which I received an award by the German Physics Association. I also received state level awards for a project on sonar systems in the German 'Jugend Forscht' Competition`,
+    description: `Perhaps explaining my late pivot to a STEM subject, I achieved the highest possible grade in my Physics exam in the German Abitur for which I received an award by the <a href=https://www.dpg-physik.de/> German Physical Society </a>. I also received state level awards for a project on sonar systems in the German '<a href=https://www.jugend-forscht.de/> Jugend Forscht <\a>' competition.`,
     },
 {
     title: 'Student Representation',

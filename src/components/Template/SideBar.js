@@ -22,7 +22,7 @@ const SideBar = () => (
     <section className="blurb">
       <h2>About</h2>
       <p>
-        I&apos;m Moritz. I am interested in the mathematical fundamentals
+        I&apos;m Moritz. I&apos;m interested in the mathematical fundamentals
         of disruptive technologies.
         I recently started to study towards the MSc in Mathematical Sciences
         at the <a href="https://www.maths.ox.ac.uk/">University of Oxford</a>,
