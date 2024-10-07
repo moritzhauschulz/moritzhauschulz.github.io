@@ -4,11 +4,6 @@ import PropTypes from 'prop-types';
 import CategoryButton from './Grades/CategoryButton';
 import GradeBar from './Grades/GradeBar';
 
-const categories = [
-  { name: 'LSE', color: '#FF5733', maxScale: 100 },
-  { name: 'UC Berkeley', color: '#3375FF', maxScale: 16 },
-  { name: 'Imperial', color: '#33FF57', maxScale: 100 },
-];
 const Grades = ({ grades, categories }) => {
   const initialButtons = Object.fromEntries(
     [['All', false]].concat(categories.map(({ name }) => [name, false])),
@@ -30,7 +25,7 @@ const Grades = ({ grades, categories }) => {
     setButtons(newButtons);
   };
 
-  const isNumeric = (value) => !isNaN(value) && value !== null && value !== undefined;
+  const isNumeric = (value) => !Number.isNaN(value) && value !== null && value !== undefined;
 
   const getRows = () => {
     // Search for the active categories
@@ -76,7 +71,7 @@ const Grades = ({ grades, categories }) => {
       .map((grade) => {
         // Find the maxScale for the grade's category
         const gradeCategory = categories.find((cat) => grade.category.includes(cat.name));
-        const maxScale = gradeCategory ? gradeCategory.maxScale : 100; // Default to 100 if not found
+        const maxScale = gradeCategory ? gradeCategory.maxScale : 100;
 
         return (
           <GradeBar
@@ -112,9 +107,6 @@ const Grades = ({ grades, categories }) => {
     </div>
   );
 };
-
-
-
 
 Grades.propTypes = {
   grades: PropTypes.arrayOf(
