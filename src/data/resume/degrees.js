@@ -9,7 +9,7 @@ const degrees = [
     school: 'Imperial College London',
     degree: 'MSc Advanced Computing',
     link: 'https://www.imperial.ac.uk/computing/',
-    year: 2024,
+    year: '2024',
   },
   {
     school: 'University of California at Berkeley',

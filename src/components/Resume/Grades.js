@@ -111,17 +111,17 @@ const Grades = ({ grades, categories }) => {
 Grades.propTypes = {
   grades: PropTypes.arrayOf(
     PropTypes.shape({
-      title: PropTypes.string,
-      competency: PropTypes.number,
-      category: PropTypes.arrayOf(PropTypes.string),
-    }),
-  ),
+      title: PropTypes.string.isRequired,
+      category: PropTypes.arrayOf(PropTypes.string).isRequired,
+      competency: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+    })
+  ).isRequired,
   categories: PropTypes.arrayOf(
     PropTypes.shape({
-      name: PropTypes.string,
-      color: PropTypes.string,
-    }),
-  ),
+      name: PropTypes.string.isRequired,
+      maxScale: PropTypes.number.isRequired,
+    })
+  ).isRequired,
 };
 
 Grades.defaultProps = {
