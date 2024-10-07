@@ -14,7 +14,9 @@ const Projects = () => (
           <h2>
             <Link to="/projects">Projects</Link>
           </h2>
-          <p>A selection of projects that I have had the time to make available online. More to be added soon.</p>
+          <p>A selection of projects that I have had the time to make available online.
+            More to be added soon.
+          </p>
         </div>
       </header>
       {data.map((project) => (

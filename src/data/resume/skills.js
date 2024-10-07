@@ -118,27 +118,27 @@ const skills = [
     title: 'Quiskit',
     competency: 2,
     category: ['Quantum', 'Programming Languages'],
-  }
+  },
 ].map((skill) => ({ ...skill, category: skill.category.sort() }));
 
 // this is a list of colors that I like. The length should be === to the
 // number of categories. Re-arrange this list until you find a pattern you like.
 const colors = [
-  "#E69F00",
-  "#56B4E9",
-  "#009E73",
-  "#F0E442",
-  "#0072B2",
-  "#D55E00",
-  "#CC79A7",
-  "#999999"
+  '#E69F00',
+  '#56B4E9',
+  '#009E73',
+  '#F0E442',
+  '#0072B2',
+  '#D55E00',
+  '#CC79A7',
+  '#999999',
 ];
 
-const skill_categories = [...new Set(skills.flatMap(({ category }) => category))]
+const SkillCategories = [...new Set(skills.flatMap(({ category }) => category))]
   .sort()
   .map((category, index) => ({
     name: category,
     color: colors[index],
   }));
 
-export { skill_categories, skills };
+export { SkillCategories, skills };
