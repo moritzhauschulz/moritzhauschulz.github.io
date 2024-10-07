@@ -114,19 +114,14 @@ Grades.propTypes = {
       title: PropTypes.string.isRequired,
       category: PropTypes.arrayOf(PropTypes.string).isRequired,
       competency: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-    })
+    }),
   ).isRequired,
   categories: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
       maxScale: PropTypes.number.isRequired,
-    })
+    }),
   ).isRequired,
-};
-
-Grades.defaultProps = {
-  grades: [],
-  categories: [],
 };
 
 export default Grades;
