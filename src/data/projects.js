@@ -16,9 +16,8 @@ const data = [
     link: 'https://raw.githubusercontent.com/moritzhauschulz/moritzhauschulz.github.io/main/public/docs/EME_Dissertation.pdf',
     date: '2021-08-01',
     desc:
-      `In this research project I conducted a factor analysis of the market reaction to ECB announcements, and was able to identify a novel causal channel that I label 'Sovereign Commitment'. This work was supervised by Shengxing Zhang at LSE.`,
+      "In this research project I conducted a factor analysis of the market reaction to ECB announcements, and was able to identify a novel causal channel that I label 'Sovereign Commitment'. This work was supervised by Shengxing Zhang at LSE.",
   },
-  
 ];
 
 export default data;

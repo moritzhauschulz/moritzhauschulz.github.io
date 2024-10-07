@@ -158,24 +158,24 @@ const grades = [
 
 // this is a list of colors that I like. The length should be === to the
 // number of categories. Re-arrange this list until you find a pattern you like.
-const colors = [
-  '#6968b3',
-  '#37b1f5',
-  '#40494e',
-  '#515dd4',
-  '#e47272',
-  '#cc7b94',
-  '#3896e2',
-  '#c3423f',
-  '#d75858',
-  '#747fff',
-  '#64cb7b',
-];
+// const colors = [
+//   '#6968b3',
+//   '#37b1f5',
+//   '#40494e',
+//   '#515dd4',
+//   '#e47272',
+//   '#cc7b94',
+//   '#3896e2',
+//   '#c3423f',
+//   '#d75858',
+//   '#747fff',
+//   '#64cb7b',
+// ];
 
-const grade_categories = [
+const GradeCategories = [
   { name: 'LSE', color: '#AE1C28', maxScale: 100 },
   { name: 'UC Berkeley', color: '#FDB515', maxScale: 16 },
   { name: 'Imperial', color: '#002147', maxScale: 100 },
 ];
 
-export { grade_categories, grades };
+export { GradeCategories, grades };

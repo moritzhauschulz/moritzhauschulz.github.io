@@ -12,8 +12,8 @@ const GradeBar = ({ data, categories, maxScale = 100 }) => {
   };
 
   // Handle non-numeric grades (like 'P', 'Absent')
-  const isNumericGrade = !isNaN(competency);
-  const barWidth = isNumericGrade ? (competency / maxScale) * 100 : 100; // Full bar for non-numeric grades
+  const isNumericGrade = !Number.isNaN(competency);
+  const barWidth = isNumericGrade ? (competency / maxScale) * 100 : 100;
 
   const barStyle = {
     ...titleStyle,
@@ -45,6 +45,7 @@ GradeBar.propTypes = {
       color: PropTypes.string,
     }),
   ),
+  maxScale: PropTypes.number,
 };
 
 GradeBar.defaultProps = {

@@ -14,7 +14,7 @@ import courses from '../data/resume/other';
 import degrees from '../data/resume/degrees';
 import work from '../data/resume/work';
 import { skills, skill_categories } from '../data/resume/skills';
-import { grades, grade_categories } from '../data/resume/grades';
+import { grades, GradeCategories } from '../data/resume/grades';
 
 
 // NOTE: sections are displayed in order defined.
@@ -22,7 +22,7 @@ const sections = {
   Education: () => <Education data={degrees} />,
   Experience: () => <Experience data={work} />,
   Skills: () => <Skills skills={skills} categories={skill_categories} />,
-  Grades: () => <Grades grades={grades} categories={grade_categories} />,
+  Grades: () => <Grades grades={grades} categories={GradeCategories} />,
   Courses: () => <Courses data={courses} />,
   References: () => <References />,
 };

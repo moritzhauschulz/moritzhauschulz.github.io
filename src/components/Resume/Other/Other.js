@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Other = ({ data, last }) => (
+const Other = ({ data }) => (
   <li className="other-container">
     <h4 className="other-name">{data.title}:</h4>
     <p
@@ -22,12 +22,13 @@ Other.propTypes = {
     link: PropTypes.string.isRequired,
     number: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
   }).isRequired,
-  last: PropTypes.bool,
+  // last: PropTypes.bool,
 };
 
 Other.defaultProps = {
-  last: false,
+  // last: false,
 };
 
 export default Other;
