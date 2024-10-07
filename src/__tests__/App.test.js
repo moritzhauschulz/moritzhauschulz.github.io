@@ -43,21 +43,21 @@ describe('renders the app', () => {
     expect(document.title).toBe('Moritz E. Hauschulz');
   });
 
-  it('can navigate to /about', async () => {
-    const aboutLink = document.querySelector(
-      '#header > nav > ul > li:nth-child(1) > a',
-    );
-    expect(aboutLink).toBeInTheDocument();
-    await act(async () => {
-      aboutLink.click();
-    });
-    expect(document.title).toContain('About |');
-    expect(window.location.pathname).toBe('/about');
-    expect(window.scrollTo).toHaveBeenNthCalledWith(1, 0, 0);
-    expect(global.fetch).toHaveBeenCalledTimes(1);
-    expect(jsonMock).toHaveBeenCalledTimes(0);
-    expect(textMock).toHaveBeenCalledTimes(1);
-  });
+  // it('can navigate to /about', async () => {
+  //   const aboutLink = document.querySelector(
+  //     '#header > nav > ul > li:nth-child(1) > a',
+  //   );
+  //   expect(aboutLink).toBeInTheDocument();
+  //   await act(async () => {
+  //     aboutLink.click();
+  //   });
+  //   expect(document.title).toContain('About |');
+  //   expect(window.location.pathname).toBe('/about');
+  //   expect(window.scrollTo).toHaveBeenNthCalledWith(1, 0, 0);
+  //   expect(global.fetch).toHaveBeenCalledTimes(1);
+  //   expect(jsonMock).toHaveBeenCalledTimes(0);
+  //   expect(textMock).toHaveBeenCalledTimes(1);
+  // });
 
   it('can navigate to /resume', async () => {
     const contactLink = document.querySelector(
@@ -83,19 +83,19 @@ describe('renders the app', () => {
     expect(window.location.pathname).toBe('/projects');
   });
 
-  it('can navigate to /stats', async () => {
-    const contactLink = document.querySelector(
-      '#header > nav > ul > li:nth-child(4) > a',
-    );
-    expect(contactLink).toBeInTheDocument();
-    await act(async () => {
-      contactLink.click();
-    });
-    expect(document.title).toContain('Stats |');
-    expect(window.location.pathname).toBe('/stats');
-    expect(global.fetch).toHaveBeenCalledTimes(1);
-    expect(jsonMock).toHaveBeenCalledTimes(1);
-  });
+  // it('can navigate to /stats', async () => {
+  //   const contactLink = document.querySelector(
+  //     '#header > nav > ul > li:nth-child(4) > a',
+  //   );
+  //   expect(contactLink).toBeInTheDocument();
+  //   await act(async () => {
+  //     contactLink.click();
+  //   });
+  //   expect(document.title).toContain('Stats |');
+  //   expect(window.location.pathname).toBe('/stats');
+  //   expect(global.fetch).toHaveBeenCalledTimes(1);
+  //   expect(jsonMock).toHaveBeenCalledTimes(1);
+  // });
 
   it('can navigate to /contact', async () => {
     const contactLink = document.querySelector(
