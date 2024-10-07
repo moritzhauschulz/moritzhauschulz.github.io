@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import dayjs from 'dayjs';
 import Markdown from 'markdown-to-jsx';
+
 const Job = ({
   data: {
     name, position, url, startDate, endDate, summary, highlights,
@@ -9,7 +10,7 @@ const Job = ({
 }) => {
   // Check if the URL is external or a PDF, and apply proper link handling
   const isExternal = url && (url.startsWith('http') || url.endsWith('.pdf'));
-  
+
   return (
     <article className="jobs-container">
       <header>
@@ -27,7 +28,6 @@ const Job = ({
           )} - {position}
         </h4>
         <p className="daterange">
-          {' '}
           {dayjs(startDate).format('MMMM YYYY')} -{' '}
           {endDate ? dayjs(endDate).format('MMMM YYYY') : 'PRESENT'}
         </p>
@@ -49,8 +49,8 @@ const Job = ({
       ) : null}
       {highlights ? (
         <ul className="points">
-          {highlights.map((highlight, index) => (
-            <li key={index}>
+          {highlights.map((highlight) => (
+            <li key={highlight}> {/* Use highlight as the key if it's unique */}
               <Markdown>{highlight}</Markdown>
             </li>
           ))}
@@ -59,6 +59,7 @@ const Job = ({
     </article>
   );
 };
+
 
 Job.propTypes = {
   data: PropTypes.shape({
