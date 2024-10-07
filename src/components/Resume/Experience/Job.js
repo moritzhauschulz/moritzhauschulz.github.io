@@ -55,7 +55,7 @@ const Job = ({
         <Markdown
           options={{
             overrides: {
-              a: { component: LinkRenderer }, // Use custom link rendering for external/internal links
+              a: { component: LinkRenderer },
               p: {
                 props: {
                   className: 'summary',
