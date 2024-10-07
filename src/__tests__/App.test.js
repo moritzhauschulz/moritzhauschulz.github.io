@@ -3,8 +3,7 @@
  */
 
 import '@testing-library/jest-dom';
-import { act } from 'react';
-import React from 'react';
+import React, { act } from 'react';
 import ReactDOM from 'react-dom/client';
 import App from '../App';
 
