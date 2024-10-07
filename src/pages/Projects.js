@@ -6,8 +6,6 @@ import Main from '../layouts/Main';
 import Cell from '../components/Projects/Cell';
 import data from '../data/projects';
 
-
-
 const Projects = () => (
   <Main title="Projects" description="Learn about Moritz' projects.">
     <article className="post" id="projects">

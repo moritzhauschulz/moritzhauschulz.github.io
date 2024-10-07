@@ -36,8 +36,8 @@ const Job = ({
     ) : null}
     {highlights ? (
       <ul className="points">
-        {highlights.map((highlight, index) => (
-          <li key={index}>
+        {highlights.map((highlight) => (
+          <li key={highlight}>
             <Markdown>{highlight}</Markdown>
           </li>
         ))}
