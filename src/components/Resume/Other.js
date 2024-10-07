@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import Other from './Other/Other';
 
 const getRows = (others) => others
