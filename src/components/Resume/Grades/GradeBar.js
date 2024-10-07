@@ -36,7 +36,7 @@ const GradeBar = ({ data, categories, maxScale = 100 }) => {
 GradeBar.propTypes = {
   data: PropTypes.shape({
     category: PropTypes.arrayOf(PropTypes.string).isRequired,
-    competency: PropTypes.number.isRequired,
+    competency: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
   }).isRequired,
   categories: PropTypes.arrayOf(
