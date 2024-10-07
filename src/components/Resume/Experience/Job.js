@@ -60,7 +60,6 @@ const Job = ({
   );
 };
 
-
 Job.propTypes = {
   data: PropTypes.shape({
     name: PropTypes.string.isRequired,
