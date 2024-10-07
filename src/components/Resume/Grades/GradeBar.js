@@ -45,11 +45,12 @@ GradeBar.propTypes = {
       color: PropTypes.string,
     }),
   ),
-  maxScale: PropTypes.number,
+  maxScale: PropTypes.number.is,
 };
 
 GradeBar.defaultProps = {
   categories: [],
+  maxScale: 100,
 };
 
 export default GradeBar;
