@@ -45,7 +45,7 @@ GradeBar.propTypes = {
       color: PropTypes.string,
     }),
   ),
-  maxScale: PropTypes.number.is,
+  maxScale: PropTypes.number,
 };
 
 GradeBar.defaultProps = {
