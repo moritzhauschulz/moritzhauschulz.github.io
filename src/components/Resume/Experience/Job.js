@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import dayjs from 'dayjs';
 import Markdown from 'markdown-to-jsx';
 
+
+
 const Job = ({
   data: {
     name, position, url, startDate, endDate, summary, highlights,
@@ -36,8 +38,10 @@ const Job = ({
     ) : null}
     {highlights ? (
       <ul className="points">
-        {highlights.map((highlight) => (
-          <li key={highlight} dangerouslySetInnerHTML={{ __html: highlight }} />
+        {highlights.map((highlight, index) => (
+          <li key={index}>
+            <Markdown>{highlight}</Markdown>
+          </li>
         ))}
       </ul>
     ) : null}

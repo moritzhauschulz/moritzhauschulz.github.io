@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import Markdown from 'markdown-to-jsx'; // Or another markdown library you are using
+
 const Other = ({ data }) => (
   <li className="other-container">
     <h4 className="other-name">{data.title}:</h4>
-    <p
-      className="other-description"
-      dangerouslySetInnerHTML={{ __html: data.description }} // Render description as HTML
-    />
+    <div className="other-description">
+      <Markdown>{data.description}</Markdown>
+    </div>
     {/* Uncomment this block if you want to add a dot separator */}
     {/* {!last && (
       <div className="other-dot">
