@@ -2,49 +2,63 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import dayjs from 'dayjs';
 import Markdown from 'markdown-to-jsx';
-
 const Job = ({
   data: {
     name, position, url, startDate, endDate, summary, highlights,
   },
-}) => (
-  <article className="jobs-container">
-    <header>
-      <h4>
-        <a href={url}>{name}</a> - {position}
-      </h4>
-      <p className="daterange">
-        {' '}
-        {dayjs(startDate).format('MMMM YYYY')} -{' '}
-        {endDate ? dayjs(endDate).format('MMMM YYYY') : 'PRESENT'}
-      </p>
-    </header>
-    {summary ? (
-      <Markdown
-        options={{
-          overrides: {
-            p: {
-              props: {
-                className: 'summary',
+}) => {
+  // Check if the URL is external or a PDF, and apply proper link handling
+  const isExternal = url && (url.startsWith('http') || url.endsWith('.pdf'));
+  
+  return (
+    <article className="jobs-container">
+      <header>
+        <h4>
+          {url ? (
+            <a
+              href={url}
+              target={isExternal ? '_blank' : '_self'}
+              rel={isExternal ? 'noopener noreferrer' : undefined}
+            >
+              {name}
+            </a>
+          ) : (
+            name
+          )} - {position}
+        </h4>
+        <p className="daterange">
+          {' '}
+          {dayjs(startDate).format('MMMM YYYY')} -{' '}
+          {endDate ? dayjs(endDate).format('MMMM YYYY') : 'PRESENT'}
+        </p>
+      </header>
+      {summary ? (
+        <Markdown
+          options={{
+            overrides: {
+              p: {
+                props: {
+                  className: 'summary',
+                },
               },
             },
-          },
-        }}
-      >
-        {summary}
-      </Markdown>
-    ) : null}
-    {highlights ? (
-      <ul className="points">
-        {highlights.map((highlight) => (
-          <li key={highlight}>
-            <Markdown>{highlight}</Markdown>
-          </li>
-        ))}
-      </ul>
-    ) : null}
-  </article>
-);
+          }}
+        >
+          {summary}
+        </Markdown>
+      ) : null}
+      {highlights ? (
+        <ul className="points">
+          {highlights.map((highlight, index) => (
+            <li key={index}>
+              <Markdown>{highlight}</Markdown>
+            </li>
+          ))}
+        </ul>
+      ) : null}
+    </article>
+  );
+};
 
 Job.propTypes = {
   data: PropTypes.shape({
