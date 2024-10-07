@@ -1,14 +1,33 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import dayjs from 'dayjs';
 import Markdown from 'markdown-to-jsx';
+import dayjs from 'dayjs';
+
+// Custom Link Renderer for Markdown to handle external/internal links
+const LinkRenderer = ({ href, children }) => {
+  const isExternal = (url) => url && (url.startsWith('http') || url.endsWith('.pdf'));
+
+  return (
+    <a
+      href={href}
+      target={isExternal(href) ? '_blank' : '_self'}
+      rel={isExternal(href) ? 'noopener noreferrer' : undefined}
+    >
+      {children}
+    </a>
+  );
+};
+
+LinkRenderer.propTypes = {
+  href: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+};
 
 const Job = ({
   data: {
     name, position, url, startDate, endDate, summary, highlights,
   },
 }) => {
-  // Check if the URL is external or a PDF, and apply proper link handling
   const isExternal = url && (url.startsWith('http') || url.endsWith('.pdf'));
 
   return (
@@ -32,10 +51,11 @@ const Job = ({
           {endDate ? dayjs(endDate).format('MMMM YYYY') : 'PRESENT'}
         </p>
       </header>
-      {summary ? (
+      {summary && (
         <Markdown
           options={{
             overrides: {
+              a: { component: LinkRenderer }, // Use custom link rendering for external/internal links
               p: {
                 props: {
                   className: 'summary',
@@ -46,16 +66,24 @@ const Job = ({
         >
           {summary}
         </Markdown>
-      ) : null}
-      {highlights ? (
+      )}
+      {highlights && (
         <ul className="points">
           {highlights.map((highlight) => (
             <li key={highlight}> {/* Use highlight as the key if it's unique */}
-              <Markdown>{highlight}</Markdown>
+              <Markdown
+                options={{
+                  overrides: {
+                    a: { component: LinkRenderer }, // Use custom link rendering in highlights
+                  },
+                }}
+              >
+                {highlight}
+              </Markdown>
             </li>
           ))}
         </ul>
-      ) : null}
+      )}
     </article>
   );
 };
@@ -64,11 +92,11 @@ Job.propTypes = {
   data: PropTypes.shape({
     name: PropTypes.string.isRequired,
     position: PropTypes.string.isRequired,
-    url: PropTypes.string.isRequired,
+    url: PropTypes.string,
     startDate: PropTypes.string.isRequired,
     endDate: PropTypes.string,
     summary: PropTypes.string,
-    highlights: PropTypes.arrayOf(PropTypes.string.isRequired),
+    highlights: PropTypes.arrayOf(PropTypes.string),
   }).isRequired,
 };
 
