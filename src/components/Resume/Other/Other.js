@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import Markdown from 'markdown-to-jsx';
 
 const LinkRenderer = ({ href, children }) => {
@@ -24,7 +23,7 @@ const Other = ({ data }) => (
       options={{
         overrides: {
           a: {
-            component: LinkRenderer, // Use the external component for links
+            component: LinkRenderer, // Use LinkRenderer to handle links
           },
           p: {
             props: {
@@ -41,21 +40,14 @@ const Other = ({ data }) => (
 
 Other.propTypes = {
   data: PropTypes.shape({
-    link: PropTypes.string.isRequired,
-    number: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired, // Markdown description
   }).isRequired,
-  // last: PropTypes.bool,
 };
 
 LinkRenderer.propTypes = {
   href: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
-};
-
-Other.defaultProps = {
-  // last: false,
 };
 
 export default Other;
