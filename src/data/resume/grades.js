@@ -115,13 +115,38 @@ const grades = [
     category: ['Imperial'],
   },
   {
+    title: 'COMP70007 – Computational Optimisation',
+    competency: 62.0,
+    category: ['Imperial'],
+  },
+  {
+    title: 'COMP70105 – Deep Graph-Based Learning',
+    competency: 82.91,
+    category: ['Imperial'],
+  },
+  {
+    title: 'COMP70010 – Deep Learning',
+    competency: 82.16,
+    category: ['Imperial'],
+  },
+  {
+    title: 'COMP70029 – MSc Advanced Computing Individual Project',
+    competency: 73.0,
+    category: ['Imperial'],
+  },
+  {
     title: 'COMP70015 – Mathematics for Machine Learning',
     competency: 83.9,
     category: ['Imperial'],
   },
   {
-    title: 'COMP70022 – Scalable Systems and Data',
-    competency: 73.0,
+    title: 'COMP70016 – Natural Language Processing',
+    competency: 83.77,
+    category: ['Imperial'],
+  },
+  {
+    title: 'COMP70021 – Quantum Computing',
+    competency: 84.13,
     category: ['Imperial'],
   },
   {
@@ -130,47 +155,11 @@ const grades = [
     category: ['Imperial'],
   },
   {
-    title: 'COMP70007 – Computational Optimisation',
-    competency: 62.0,
-    category: ['Imperial'],
-  },
-  {
-    title: 'COMP70010 – Deep Learning',
-    competency: 82.16,
-    category: ['Imperial'],
-  },
-  // {
-  //   title: 'COMP70016 – Natural Language Processing',
-  //   competency: 'Absent',
-  //   category: ['Imperial'],
-  // },
-  {
-    title: 'COMP70021 – Quantum Computing',
-    competency: 84.13,
-    category: ['Imperial'],
-  },
-  {
-    title: 'COMP70105 – Deep Graph-Based Learning',
-    competency: 82.91,
+    title: 'COMP70022 – Scalable Systems and Data',
+    competency: 73.0,
     category: ['Imperial'],
   },
 ].map((skill) => ({ ...skill, category: skill.category.sort() }));
-
-// this is a list of colors that I like. The length should be === to the
-// number of categories. Re-arrange this list until you find a pattern you like.
-// const colors = [
-//   '#6968b3',
-//   '#37b1f5',
-//   '#40494e',
-//   '#515dd4',
-//   '#e47272',
-//   '#cc7b94',
-//   '#3896e2',
-//   '#c3423f',
-//   '#d75858',
-//   '#747fff',
-//   '#64cb7b',
-// ];
 
 const GradeCategories = [
   { name: 'LSE', color: '#AE1C28', maxScale: 100 },
