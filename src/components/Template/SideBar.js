@@ -22,14 +22,14 @@ const SideBar = () => (
     <section className="blurb">
       <h2>About</h2>
       <p>
-        I&apos;m Moritz. I&apos;m interested in mathematics, and how we can use 
+        I&apos;m Moritz. I&apos;m interested in mathematics, and how we can use
         it to drive innovation.
         I recently started to study towards the MSc in Mathematical Sciences
         at the <a href="https://www.maths.ox.ac.uk/">University of Oxford</a>,
         and am actively searching doctoral positions to study the intersection of
-        machine learning and dynamical systems. This includes generative diffusion processes, 
-        how they relate to optimal control and sampling, 
-        but also we can use machine learning to model real-world dynamical systems 
+        machine learning and dynamical systems. This includes generative diffusion processes,
+        how they relate to optimal control and sampling,
+        but also we can use machine learning to model real-world dynamical systems
         like weather and climate.
         My recent work focuses on generative modelling in discrete spaces with energy based models,
         and I wrote a {' '}<a href="https://github.com/moritzhauschulz/samplingEBMs"> thesis </a>
