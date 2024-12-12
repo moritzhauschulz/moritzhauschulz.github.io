@@ -5,7 +5,7 @@ const data = [
     subtitle: 'RESEARCH PROPOSAL',
     image: '/images/projects/TB_thumbnail.png',
     link: 'https://github.com/moritzhauschulz/samplingEBMs/blob/f7cd526c22000ceecf592198710b965b10478e4e/Discrete_Flow_Sampling_with_Trajectory_Balance___Ideas.pdf',
-    date: '2024-10-01',
+    date: '2024-11-01',
     desc:
       'I present some ideas which I intend to explore in my PhD. These are based on insights from my research project on "Training Energy-Based Models by Learning to Sample with Discrete Flows."',
   },
