@@ -22,23 +22,26 @@ const SideBar = () => (
     <section className="blurb">
       <h2>About</h2>
       <p>
-        I&apos;m Moritz. I&apos;m interested in mathematics, and how we can use
-        it to drive innovation.
-        I recently started to study towards the MSc in Mathematical Sciences
+        I&apos;m studying towards the MSc in Mathematical Sciences
         at the <a href="https://www.maths.ox.ac.uk/">University of Oxford</a>,
         and am actively searching doctoral positions to study the intersection of
         machine learning and dynamical systems. This includes generative diffusion processes,
         how they relate to optimal control and sampling,
         but also we can use machine learning to model real-world dynamical systems
         like weather and climate.
-        My recent work focuses on generative modelling in discrete spaces with energy based models,
-        and I wrote a {' '}<a href="https://github.com/moritzhauschulz/samplingEBMs"> thesis </a>
-        on this topic at <a href="https://www.imperial.ac.uk/computing/">Imperial</a>.
+      </p>
+      <p>
+        I am lucky to be supervised by <a href="https://www.maths.ox.ac.uk/people/georg.maierhofer"> Georg Maierhofer </a>
+        for my current project on structure preserving operator learning at Oxford.
+        Before that I worked on generative modelling in discrete spaces with EBMs and I wrote a {' '}<a href="https://github.com/moritzhauschulz/samplingEBMs"> thesis </a>
+        on this topic at <a href="https://www.imperial.ac.uk/computing/">Imperial</a> under the great supervision of <a href="http://yingzhenli.net/home/en/"> Yingzhen Li </a>.
+      </p>
+      <p>
         I was an undergraduate at <a href="https://www.lse.ac.uk/economics">LSE</a>,
         where I met the amazing people whom I helped build  <a href="https://alexandria-media.org/">Alexandria </a>
         before starting my graduate studies.
         My work has been generously supported by the <a href="https://www.sdw.org/index.html">sdw</a> for many years,
-        and I am currently president of their UK group.
+        and I&apos;m currently president of their UK group.
       </p>
       {/* <ul className="actions">
         <li>
