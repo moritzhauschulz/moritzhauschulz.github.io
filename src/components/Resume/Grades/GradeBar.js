@@ -11,9 +11,14 @@ const GradeBar = ({ data, categories, maxScale = 100 }) => {
       .map((cat) => cat.color)[0],
   };
 
-  // Handle non-numeric grades (like 'P', 'Absent')
-  const isNumericGrade = !Number.isNaN(competency);
+  // Determine if the grade is numeric
+  const isNumericGrade = typeof competency === 'number' && !Number.isNaN(competency);
+
+  // Calculate the bar width
   const barWidth = isNumericGrade ? (competency / maxScale) * 100 : 100;
+
+  // Determine the class for the bar
+  const barClass = isNumericGrade ? 'numeric-grade' : 'non-numeric-grade';
 
   const barStyle = {
     ...titleStyle,
@@ -25,7 +30,7 @@ const GradeBar = ({ data, categories, maxScale = 100 }) => {
       <div className="skillbar-title" style={titleStyle}>
         <span>{title}</span>
       </div>
-      <div className="skillbar-bar" style={barStyle} />
+      <div className={`skillbar-bar ${barClass}`} style={barStyle} />
       <div className="skill-bar-percent">
         {isNumericGrade ? `${competency} / ${maxScale}` : competency}
       </div>
