@@ -19,7 +19,7 @@ const data = [
       'In this research project I used discrete flows to amortize the generation of negative samples for training energy-based models. My work was supervised by Yingzhen Li and Zijing Ou at Imperial.',
   },
   {
-    title: 'Project on Graph-based Super-Resolution of Brain Connectivity Matrices (Coursework)',
+    title: 'Graph-based Super-Resolution of Brain Connectivity Matrices (Coursework)',
     subtitle: 'Coursework at Imperial College',
     image: '/images/projects/GraphNetbyNet.png',
     link: 'https://raw.githubusercontent.com/moritzhauschulz/moritzhauschulz.github.io/main/public/docs/Deep_Graph_Learning_Report_Anon.pdf',
@@ -28,7 +28,7 @@ const data = [
       'In this group project we developed a new framework for brain graph super-resolution.',
   },
   {
-    title: 'Project on Detecting Patronizing Language (Coursework)',
+    title: 'Detecting Patronizing Language (Coursework)',
     subtitle: 'Coursework at Imperial College',
     image: '/images/projects/NLP_thumbnail.png',
     link: 'https://raw.githubusercontent.com/moritzhauschulz/moritzhauschulz.github.io/main/public/docs/NLP_Courswork_website.pdf',
