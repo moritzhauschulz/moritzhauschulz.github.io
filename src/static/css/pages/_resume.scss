@@ -23,6 +23,17 @@
       margin-bottom: 2em;
     }
   }
+  .research {
+    .title {
+      text-align: center;
+    }
+    .job {
+      margin: 1em;
+      p {
+        margin: 0;
+      }
+    }
+  }
   .experience {
     .title {
       text-align: center;
@@ -34,7 +45,6 @@
       }
     }
   }
-
   .jobs-container {
     .points {
       li {
