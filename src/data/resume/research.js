@@ -1,7 +1,7 @@
 const research = [
   {
     name: 'University of Oxford',
-    position: 'MSc Thesis Researcher',
+    position: 'MSc Thesis',
     startDate: '2024-10-01',
     endDate: '2025-05-30',
     summary: 'Research focused on structure-preserving operator learning for partial differential equations (PDEs).',
@@ -13,7 +13,7 @@ const research = [
   },
   {
     name: 'Imperial College London',
-    position: 'MSc Thesis Researcher',
+    position: 'MSc Thesis',
     startDate: '2024-04-01',
     endDate: '2024-09-30',
     summary: 'Developed novel methods for training energy-based models (EBMs) using discrete flow sampling techniques.',
@@ -39,7 +39,7 @@ const research = [
   },
   {
     name: 'London School of Economics',
-    position: 'BSc Thesis Researcher',
+    position: 'BSc Thesis',
     startDate: '2020-09-01',
     endDate: '2021-07-30',
     summary: 'Empirical research on monetary policy in the Eurozone, focusing on the sovereign commitment channel.',
