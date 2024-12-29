@@ -27,7 +27,7 @@ const SideBar = () => (
         and am actively searching doctoral positions to study the intersection of
         machine learning and dynamical systems. This includes generative diffusion processes,
         how they relate to optimal control and sampling,
-        but also we can use machine learning to model real-world dynamical systems
+        but also the use of machine learning for modeling real-world dynamical systems
         like weather and climate.
       </p>
       <p>
