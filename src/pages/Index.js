@@ -6,7 +6,7 @@ import Main from '../layouts/Main';
 const Index = () => (
   <Main
     description={
-      "Moritz Hauschulz' website – I am currently a mathematics student at Oxford."
+      "Moritz Hauschulz' website – I currently study mathematics at Oxford. "
       + 'I was previously affiliated with LSE, UC Berkeley and Imperial College London.'
     }
   >
