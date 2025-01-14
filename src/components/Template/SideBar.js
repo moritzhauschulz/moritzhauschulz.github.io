@@ -23,8 +23,8 @@ const SideBar = () => (
       <h2>About</h2>
       <p>
         I&apos;m studying towards the MSc in Mathematical Sciences
-        at the <a href="https://www.maths.ox.ac.uk/">University of Oxford</a>,
-        and am actively searching doctoral positions to study the intersection of
+        at the <a href="https://www.maths.ox.ac.uk/">University of Oxford</a>.
+        I am interested in understanding the intersection of
         machine learning and dynamical systems. This includes generative diffusion processes,
         how they relate to optimal control and sampling,
         but also the use of machine learning for modeling real-world dynamical systems
