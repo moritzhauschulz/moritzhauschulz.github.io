@@ -1,9 +1,18 @@
 // TODO Add a couple lines about each project
 const data = [
   {
+    title: 'sPINNacle: Scale-Invariant Collocation Point Selection with NTK Learning Rate Adaptation (Course Paper)',
+    subtitle: 'Coursework at Univeristy of Oxford',
+    image: '/images/projects/TB_thumbnail.png',
+    link: 'https://github.com/moritzhauschulz/samplingEBMs/blob/f7cd526c22000ceecf592198710b965b10478e4e/Discrete_Flow_Sampling_with_Trajectory_Balance___Ideas.pdf',
+    date: '2024-11-01',
+    desc:
+      'This proposal is based on insights from my research project on "Training Energy-Based Models by Learning to Sample with Discrete Flows."',
+  },
+  {
     title: 'Discrete Flow Sampling with Trajectory Balance (Research Proposal)',
     subtitle: 'RESEARCH PROPOSAL',
-    image: '/images/projects/TB_thumbnail.png',
+    image: '/images/projects/poisson_preds.png',
     link: 'https://github.com/moritzhauschulz/samplingEBMs/blob/f7cd526c22000ceecf592198710b965b10478e4e/Discrete_Flow_Sampling_with_Trajectory_Balance___Ideas.pdf',
     date: '2024-11-01',
     desc:
