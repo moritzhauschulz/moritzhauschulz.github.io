@@ -3,7 +3,7 @@ const data = [
   {
     title: 'sPINNacle: Scale-Invariant Collocation Point Selection with NTK Learning Rate Adaptation (Course Paper)',
     subtitle: 'Coursework at Univeristy of Oxford',
-    image: '/images/projects/TB_thumbnail.png',
+    image: '/images/projects/poisson_preds.png',
     link: 'https://raw.githubusercontent.com/moritzhauschulz/moritzhauschulz.github.io/main/public/docs/sPINNacle.pdf',
     date: '2025-01-01',
     desc:
@@ -12,7 +12,7 @@ const data = [
   {
     title: 'Discrete Flow Sampling with Trajectory Balance (Research Proposal)',
     subtitle: 'RESEARCH PROPOSAL',
-    image: '/images/projects/poisson_preds.png',
+    image: '/images/projects/TB_thumbnail.png',
     link: '',
     date: '2024-11-01',
     desc:
