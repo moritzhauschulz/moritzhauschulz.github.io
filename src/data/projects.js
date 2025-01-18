@@ -7,7 +7,7 @@ const data = [
     link: 'https://raw.githubusercontent.com/moritzhauschulz/moritzhauschulz.github.io/main/public/docs/sPINNacle.pdf',
     date: '2025-01-01',
     desc:
-      'This proposal is based on insights from my research project on "Training Energy-Based Models by Learning to Sample with Discrete Flows."',
+      'In this project, I combine automatic collocation point selection with an NTK-based learning rate adaptation scheme to improve the robustness of PINNs under domain rescaling.',
   },
   {
     title: 'Discrete Flow Sampling with Trajectory Balance (Research Proposal)',
