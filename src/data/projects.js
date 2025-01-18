@@ -16,7 +16,7 @@ const data = [
     link: '',
     date: '2024-11-01',
     desc:
-      'This proposal is based on insights from my research project on "Training Energy-Based Models by Learning to Sample with Discrete Flows.',
+      'This proposal is based on insights from my research project on "Training Energy-Based Models by Learning to Sample with Discrete Flows."',
   },
   {
     title: 'Training Energy-Based Models by Learning to Sample with Discrete Flows (MSc Thesis)',
