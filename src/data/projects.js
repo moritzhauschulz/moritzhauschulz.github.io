@@ -4,7 +4,7 @@ const data = [
     title: 'sPINNacle: Scale-Invariant Collocation Point Selection with NTK Learning Rate Adaptation (Course Paper)',
     subtitle: 'Coursework at Univeristy of Oxford',
     image: '/images/projects/poisson_preds.png',
-    link: 'https://raw.githubusercontent.com/moritzhauschulz/moritzhauschulz.github.io/main/public/docs/sPINNacle.pdf',
+    link: 'https://raw.githubusercontent.com/moritzhauschulz/moritzhauschulz.github.io/main/public/docs/sPINNacle_paper.pdf',
     date: '2025-01-01',
     desc:
       'In this project, I combine automatic collocation point selection with an NTK-based learning rate adaptation scheme to improve the robustness of PINNs under domain rescaling.',
