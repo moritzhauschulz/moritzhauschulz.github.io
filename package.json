@@ -14,7 +14,7 @@
     "analyze": "npm run build && source-map-explorer build/static/js/*.chunk.js",
     "build": "rimraf ./build && react-scripts build",
     "lint": "eslint \"**/*.js\"",
-    "predeploy": "npm run build && react-snap",
+    "predeploy": "PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true PUPPETEER_EXECUTABLE_PATH=$(which chromium-browser) PUPPETEER_ARGS='--no-sandbox' npm run build && react-snap",
     "start": "react-scripts start",
     "test": "npx jest"
   },
