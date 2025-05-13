@@ -61,6 +61,15 @@ jobs:
         env:
           NODE_ENV: production
           REACT_APP_GA_TRACKING_ID: UA-68649021-1
+      
+      - name: Check build folder contents
+        run: |
+          if [ ! -d "build" ]; then
+            echo "❌ build folder does not exist!"
+            exit 1
+          fi
+          echo "✅ build folder contents:"
+          ls -la build
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
