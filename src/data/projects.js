@@ -1,6 +1,24 @@
 // TODO Add a couple lines about each project
 const data = [
   {
+    title: 'Towards Strict Conservation of Quadratic Conservation Laws in Operator Learning (MSc Thesis)',
+    subtitle: 'Coursework at Univeristy of Oxford',
+    image: '/images/projects/OxMSc_thumbnail.png',
+    link: 'https://raw.githubusercontent.com/moritzhauschulz/moritzhauschulz.github.io/main/public/docs/Oxford_MSc_Thesis.pdf',
+    date: '2025-05-01',
+    desc:
+      'In this project, I improved the performance of several operator learning frameworks by enforcing energy conservation. My work was supervised by Georg Maierhofer and Nicolas Boulé at Oxford/Imperial.',
+  },
+  {
+    title: 'Discrete Morse Theory for Computing Mayer-Vietoris Long Exact Sequences for Cellular Cosheaf Homology (Course Paper)',
+    subtitle: 'Coursework at Univeristy of Oxford',
+    image: '/images/projects/TDA_thumbnail.png',
+    link: 'https://raw.githubusercontent.com/moritzhauschulz/moritzhauschulz.github.io/main/public/docs/Computational_Algebraic_Topology.pdf',
+    date: '2025-05-01',
+    desc:
+      'In this project, I explain computational aspects of computing Mayer-Vietoris LES for the case of Cosheaf Homology.',
+  },
+  {
     title: 'sPINNacle: Scale-Invariant Collocation Point Selection with NTK Learning Rate Adaptation (Course Paper)',
     subtitle: 'Coursework at Univeristy of Oxford',
     image: '/images/projects/poisson_preds.png',
