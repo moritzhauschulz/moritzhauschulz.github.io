@@ -23,7 +23,6 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     env:
-      PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: true
       PUPPETEER_ARGS: --no-sandbox
     steps:
       - name: Checkout
