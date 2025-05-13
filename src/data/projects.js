@@ -43,7 +43,7 @@ const data = [
     link: 'https://raw.githubusercontent.com/moritzhauschulz/samplingEBMs/main/REPORT.pdf',
     date: '2024-10-01',
     desc:
-      'Here, I used discrete flows to amortize the generation of negative samples for training energy-based models. My work was supervised by Yingzhen Li and Zijing Ou at Imperial.',
+      'In this research project I used discrete flows to amortize the generation of negative samples for training energy-based models. My work was supervised by Yingzhen Li and Zijing Ou at Imperial.',
   },
   {
     title: 'Graph-based Super-Resolution of Brain Connectivity Matrices (Coursework)',
