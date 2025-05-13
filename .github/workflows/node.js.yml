@@ -71,7 +71,7 @@ jobs:
               }
             done
           }
-          retry npm run predeploy
+          retry npm run predeploy -- --no-sandbox
         env:
           NODE_ENV: development
       - name: Test
