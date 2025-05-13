@@ -16,7 +16,7 @@ const data = [
     link: 'https://raw.githubusercontent.com/moritzhauschulz/moritzhauschulz.github.io/main/public/docs/Computational_Algebraic_Topology.pdf',
     date: '2025-05-01',
     desc:
-      'In this project, I explain computational aspects of computing Mayer-Vietoris LES for the case of Cosheaf Homology.',
+      'In this project, I explain computational aspects for computing Mayer-Vietoris LES for the case of Cosheaf Homology.',
   },
   {
     title: 'sPINNacle: Scale-Invariant Collocation Point Selection with NTK Learning Rate Adaptation (Course Paper)',
