@@ -24,7 +24,7 @@ const sections = {
   Research: () => <Research data={research} />,
   Experience: () => <Experience data={work} />,
   Skills: () => <Skills skills={skills} categories={SkillCategories} />,
-  Grades: () => <Grades grades={grades} categories={GradeCategories} />,
+  // Grades: () => <Grades grades={grades} categories={GradeCategories} />,
   Courses: () => <Courses data={courses} />,
   References: () => <References />,
 };

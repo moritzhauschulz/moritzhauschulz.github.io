@@ -25,7 +25,7 @@ const data = [
     icon: faXTwitter,
   },
   {
-    link: 'mailto:moritz.hauschulz@stx.ox.ac.uk',
+    link: 'mailto:moritz.hauschulz@reuben.ox.ac.uk',
     label: 'Email',
     icon: faEnvelope,
   },

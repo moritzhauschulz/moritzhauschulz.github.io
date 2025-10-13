@@ -22,18 +22,19 @@ const SideBar = () => (
     <section className="blurb">
       <h2>About</h2>
       <p>
-        I&apos;m studying towards the MSc in Mathematical Sciences
+        I&apos;m reading for my PhD (=DPhil)
         at the <a href="https://www.maths.ox.ac.uk/">University of Oxford</a>.
         I am interested in understanding the intersection of
-        machine learning and dynamical systems. This includes generative diffusion processes,
-        how they relate to optimal control and sampling,
+        machine learning, dynamical systems and stochastic processes. This includes generative diffusion processes,
+        how they relate to stochastic analysis,
         but also the use of machine learning for modeling real-world dynamical systems
-        like weather and climate.
+        like weather and climate. 
       </p>
       <p>
-        I am lucky to be supervised by <a href="https://www.maths.ox.ac.uk/people/georg.maierhofer"> Georg Maierhofer </a>
-        for my current project on structure preserving operator learning at Oxford.
-        Before that I worked on generative modelling in discrete spaces with EBMs and I wrote a {' '}<a href="https://github.com/moritzhauschulz/samplingEBMs"> thesis </a>
+        Before starting my PhD, I completed the MSc in Mathematical Sciences, during which I was lucky to be advised by <a href="https://www.maths.ox.ac.uk/people/georg.maierhofer"> Georg Maierhofer </a> and 
+        <a href="https://www.maths.ox.ac.uk/people/georg.maierhofer"> N</a>
+        for my project on structure preserving operator learning.
+        Previously, I worked on generative modelling in discrete spaces with EBMs and I wrote a {' '}<a href="https://github.com/moritzhauschulz/samplingEBMs"> thesis </a>
         on this topic at <a href="https://www.imperial.ac.uk/computing/">Imperial</a> under the great supervision of <a href="http://yingzhenli.net/home/en/"> Yingzhen Li </a>.
       </p>
       <p>
@@ -41,7 +42,7 @@ const SideBar = () => (
         where I met the amazing people whom I helped build  <a href="https://alexandria-media.org/">Alexandria </a>
         before starting my graduate studies.
         My work has been generously supported by the <a href="https://www.sdw.org/index.html">sdw</a> for many years,
-        and I&apos;m currently president of their UK group.
+        whose UK group I presided from 2023 to 2025.
       </p>
       {/* <ul className="actions">
         <li>
