@@ -4,13 +4,12 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 import ContactIcons from '@/components/Contact/ContactIcons';
-import EmailLink from '@/components/Contact/EmailLink';
 
 import PageWrapper from '../components/PageWrapper';
 
 export const metadata: Metadata = {
   title: 'Contact',
-  description: "Contact Michael D'Angelo via email @ hi@mldangelo.com",
+  description: 'Contact Moritz Hauschulz via email @ moritz.hauschulz@reuben.ox.ac.uk',
 };
 
 export default function ContactPage() {
@@ -25,8 +24,10 @@ export default function ContactPage() {
           </div>
         </header>
         <div className="email-at">
-          <p>Feel free to get in touch. You can email me at:</p>
-          <EmailLink />
+          <p>
+            Feel free to get in touch. You can email me at:
+            <a href="mailto:moritz.hauschulz@reuben.ox.ac.uk"> moritz.hauschulz@reuben.ox.ac.uk</a>
+          </p>
         </div>
         <ContactIcons />
       </article>

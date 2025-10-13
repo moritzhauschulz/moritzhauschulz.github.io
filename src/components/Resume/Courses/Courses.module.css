@@ -1,0 +1,59 @@
+.universityBox {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.universityBox:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.universityTitle {
+  margin-bottom: 1rem;
+  color: #333;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.courseList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.courseItem {
+  display: flex;
+  align-items: baseline;
+  padding: 0.75rem;
+  background-color: #f8f8f8;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.courseItem:hover {
+  background-color: #f0f0f0;
+}
+
+.courseNumber {
+  min-width: 80px;
+  margin-right: 1rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.courseTitle {
+  color: #333;
+  flex: 1;
+}

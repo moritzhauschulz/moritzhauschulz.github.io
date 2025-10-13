@@ -1,89 +1,79 @@
 export interface Course {
   title: string;
   number: string;
-  link: string;
   university: string;
 }
 
 const courses: Course[] = [
+  { title: 'Elementary Statistical Theory', number: 'ST102', university: 'LSE' },
+  { title: 'Economics A', number: 'EC100', university: 'LSE' },
+  { title: 'Introduction to Abstract Mathematics', number: 'MA103', university: 'LSE' },
+  { title: 'Mathematical Methods', number: 'MA100', university: 'LSE' },
+  { title: 'Macroeconomic Principles', number: 'EC210', university: 'LSE' },
+  { title: 'Microeconomic Principles II', number: 'EC202', university: 'LSE' },
+  { title: 'Principles of Econometrics', number: 'EC221', university: 'LSE' },
+  { title: 'Real Analysis', number: 'MA203', university: 'LSE' },
+  { title: 'Discrete Mathematics', number: 'MA210', university: 'LSE' },
+  { title: 'Econometric Theory', number: 'EC309', university: 'LSE' },
+  { title: 'Behavioural Economics', number: 'EC310', university: 'LSE' },
+  { title: 'Quantitative Thesis', number: 'EC331', university: 'LSE' },
+  { title: 'Algebra and Number Theory', number: 'MA211', university: 'LSE' },
+  { title: 'Complex Analysis', number: 'MA317', university: 'LSE' },
+
   {
-    title: 'Convex Optimization',
-    number: 'EE 364a',
-    link: 'http://stanford.edu/class/ee364a/',
-    university: 'Stanford',
+    title: 'Structure and Interpretation of Computer Programs',
+    number: 'COMPSCI 61A',
+    university: 'Berkeley',
+  },
+  { title: 'Linear Algebra', number: 'MATH 110', university: 'Berkeley' },
+  {
+    title: 'Introduction to Partial Differential Equations',
+    number: 'MATH 126',
+    university: 'Berkeley',
+  },
+  { title: 'Topology & Analysis', number: 'MATH 202A', university: 'Berkeley' },
+  { title: 'Data Structures', number: 'COMPSCI 61B', university: 'Berkeley' },
+  { title: 'Abstract Algebra II', number: 'MATH 114', university: 'Berkeley' },
+  { title: 'Incompleteness and Undecidability', number: 'MATH 136', university: 'Berkeley' },
+
+  { title: 'Complexity', number: 'COMP70005', university: 'Imperial' },
+  { title: 'Computational Optimisation', number: 'COMP70007', university: 'Imperial' },
+  { title: 'Deep Graph-Based Learning', number: 'COMP70105', university: 'Imperial' },
+  { title: 'Deep Learning', number: 'COMP70010', university: 'Imperial' },
+  {
+    title: 'MSc Advanced Computing Individual Project',
+    number: 'COMP70029',
+    university: 'Imperial',
+  },
+  { title: 'Mathematics for Machine Learning', number: 'COMP70015', university: 'Imperial' },
+  { title: 'Natural Language Processing', number: 'COMP70016', university: 'Imperial' },
+  { title: 'Quantum Computing', number: 'COMP70021', university: 'Imperial' },
+  { title: 'Reinforcement Learning', number: 'COMP70028', university: 'Imperial' },
+  { title: 'Scalable Systems and Data', number: 'COMP70022', university: 'Imperial' },
+
+  { title: 'Computational Algebraic Topology', number: 'C3.9', university: 'Oxford' },
+  {
+    title: 'Dissertation on a Mathematical Topic (double unit)',
+    number: 'CCD',
+    university: 'Oxford',
   },
   {
-    title: 'Machine Learning',
-    number: 'CS 229',
-    link: 'http://cs229.stanford.edu/',
-    university: 'Stanford',
+    title: 'Finite Element Methods for Partial Differential Equations',
+    number: 'C6.4',
+    university: 'Oxford',
   },
   {
-    title: 'Convolutional Neural Networks for Visual Recognition',
-    number: 'CS 231n',
-    link: 'http://cs231n.stanford.edu/',
-    university: 'Stanford',
+    title: 'Functional Analytic Methods for Partial Differential Equations',
+    number: 'C4.3',
+    university: 'Oxford',
   },
   {
-    title: 'Numerical Linear Algebra',
-    number: 'CME 302',
-    link: 'http://scpd.stanford.edu/search/publicCourseSearchDetails.do;jsessionid=561188A06434D7D97953C4706DE12831?method=load&courseId=11685',
-    university: 'Stanford',
+    title: 'Stochastic Analysis and Partial Differential Equations',
+    number: 'C8.2',
+    university: 'Oxford',
   },
-  {
-    title: 'Numerical Optimization',
-    number: 'CME 304',
-    link: 'http://web.stanford.edu/class/cme304/',
-    university: 'Stanford',
-  },
-  {
-    title: 'Discrete Mathematics and Algorithms',
-    number: 'CME 305',
-    link: 'http://stanford.edu/~rezab/discrete/',
-    university: 'Stanford',
-  },
-  {
-    title: 'Stochastic Methods in Engineering',
-    number: 'CME 306',
-    link: 'http://web.stanford.edu/class/cme306/',
-    university: 'Stanford',
-  },
-  {
-    title: 'Optimization',
-    number: 'CME 307',
-    link: 'http://stanford.edu/class/cme307/',
-    university: 'Stanford',
-  },
-  {
-    title: 'Stochastic Processes',
-    number: 'CME 308',
-    link: 'http://web.stanford.edu/class/cme308/',
-    university: 'Stanford',
-  },
-  {
-    title: 'Randomized Algorithms and Probabilistic Analysis',
-    number: 'CS 365',
-    link: 'http://web.stanford.edu/class/cs365/',
-    university: 'Stanford',
-  },
-  {
-    title: 'Deep Learning for Natural Language Processing',
-    number: 'CS 224d',
-    link: 'http://cs224d.stanford.edu',
-    university: 'Stanford',
-  },
-  {
-    title: 'Mining Massive Data Sets',
-    number: 'CS 246',
-    link: 'http://web.stanford.edu/class/cs246/',
-    university: 'Stanford',
-  },
-  {
-    title: 'Computer Vision: Foundations and Applications',
-    number: 'CS 131',
-    link: 'http://vision.stanford.edu/teaching/cs131_fall1415/index.html',
-    university: 'Stanford',
-  },
+  { title: 'Stochastic Differential Equations', number: 'C8.1', university: 'Oxford' },
+  { title: 'Theories of Deep Learning', number: 'C6.5', university: 'Oxford' },
 ];
 
 export default courses;

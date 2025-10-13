@@ -1,28 +1,25 @@
 import React from 'react';
 
-import Image from 'next/image';
-
 import dayjs from 'dayjs';
 
 import type { Project } from '@/data/projects';
+
+import styles from './Cell.module.css';
 
 interface CellProps {
   data: Project;
 }
 
 const Cell: React.FC<CellProps> = ({ data }) => (
-  <div className="cell-container">
-    <article className="mini-post">
+  <div className={styles.projectBox}>
+    <article>
       <header>
-        <h3>
+        <h3 className={styles.title}>
           <a href={data.link}>{data.title}</a>
         </h3>
         <time className="published">{dayjs(data.date).format('MMMM, YYYY')}</time>
       </header>
-      <a href={data.link} className="image">
-        <Image src={data.image} alt={data.title} width={600} height={400} />
-      </a>
-      <div className="description">
+      <div className={styles.description}>
         <p>{data.desc}</p>
       </div>
     </article>

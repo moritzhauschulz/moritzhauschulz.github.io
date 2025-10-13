@@ -4,23 +4,20 @@ import React from 'react';
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 
 import ContactIcons from '../Contact/ContactIcons';
 
 const SideBar: React.FC = () => {
-  const pathname = usePathname();
-
   return (
     <section id="sidebar">
       <section id="intro">
         <Link href="/" className="logo">
-          <Image src="/images/me.jpg" alt="Michael D'Angelo" width={200} height={200} priority />
+          <Image src="/images/me.jpg" alt="Moritz Hauschulz" width={200} height={200} priority />
         </Link>
         <header>
-          <h2>Michael D&apos;Angelo</h2>
+          <h2>Moritz Hauschulz</h2>
           <p>
-            <a href="mailto:michael@mldangelo.com">michael@mldangelo.com</a>
+            <a href="mailto:moritz.hauschulz@gmail.com">moritz.hauschulz@reuben.ox.ac.uk</a>
           </p>
         </header>
       </section>
@@ -28,32 +25,44 @@ const SideBar: React.FC = () => {
       <section className="blurb">
         <h2>About</h2>
         <p>
-          Hi, I&apos;m Michael. I am a <a href="https://icme.stanford.edu/">Stanford ICME</a>{' '}
-          graduate, YC alumnus, and the co-founder and CTO of{' '}
-          <a href="https://promptfoo.dev">Promptfoo</a>. Previously, I was VP of Engineering at{' '}
-          <a href="https://usesmileid.com">SmileID</a>, co-founder and CTO of{' '}
-          <a href="https://arthena.com">Arthena</a>, and co-founded{' '}
-          <a href="https://matroid.com">Matroid</a>.
+          I&apos;m reading for my PhD (=DPhil) at the{' '}
+          <a href="https://www.maths.ox.ac.uk/">University of Oxford</a>. I&apos;m interested in
+          understanding the intersection of machine learning, dynamical systems and randomness. This
+          includes generative diffusion processes, how they relate to stochastic analysis, but also
+          the use of machine learning for modeling real-world dynamical systems like weather and
+          climate. I am a developer on the{' '}
+          <a href="https://weathergenerator.eu"> WeatherGenerator </a> project.
         </p>
-        <ul className="actions">
-          <li>
-            {pathname && !pathname.includes('/resume') ? (
-              <Link href="/resume" className="button">
-                Learn More
-              </Link>
-            ) : (
-              <Link href="/about" className="button">
-                About Me
-              </Link>
-            )}
-          </li>
-        </ul>
+        <p>
+          Before starting my PhD, I completed the MSc in Mathematical Sciences, during which I was
+          lucky to be advised by{' '}
+          <a href="https://www.maths.ox.ac.uk/people/georg.maierhofer"> Georg Maierhofer </a>
+          for my project on structure preserving operator learning. Previously, I worked on
+          generative modelling in discrete spaces with EBMs and I wrote a{' '}
+          <a href="https://github.com/moritzhauschulz/samplingEBMs"> thesis </a>
+          on this topic at <a href="https://www.imperial.ac.uk/computing/">Imperial</a> under the
+          great supervision of <a href="http://yingzhenli.net/home/en/"> Yingzhen Li </a>.
+        </p>
+        <p>
+          I was an undergraduate at <a href="https://www.lse.ac.uk/economics">LSE</a>, where I met
+          the amazing people whom I helped build{' '}
+          <a href="https://alexandria-media.org/">Alexandria </a>
+          before starting my graduate studies. My work has been generously supported by the{' '}
+          <a href="https://www.sdw.org/index.html">sdw</a> for many years, whose UK group I presided
+          from 2023 to 2025.
+        </p>
       </section>
 
       <section id="footer">
         <ContactIcons />
+        <p>
+          This website is based on a template by
+          <a href="https://mldangelo.com/"> Michael D&apos;Angelo </a>
+          available <a href="https://github.com/mldangelo/personal-site">here</a>.
+        </p>
         <p className="copyright">
-          &copy; Michael D&apos;Angelo <Link href="/">mldangelo.com</Link>.
+          &copy; Moritz Hauschulz{' '}
+          <a href="https://moritzhauschulz.github.io/">https://moritzhauschulz.github.io/</a>.
         </p>
       </section>
     </section>

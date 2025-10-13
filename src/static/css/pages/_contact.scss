@@ -1,28 +1,26 @@
-// Contact page (/contact)
+// #contact {
+//   .email-at {
+//     margin: 3em 0;
 
-#contact {
-  .email-at {
-    margin: 3em 0;
+//     p {
+//       margin: 0;
+//     }
 
-    p {
-      margin: 0;
-    }
+//     .inline-container {
+//       width: 100%;
 
-    .inline-container {
-      width: 100%;
-
-      span:focus {
-        display: inline-block;
-        outline: none;
-        border: 0;
-        text-align: right;
-      }
-    }
-  }
-}
+//       span:focus {
+//         display: inline-block;
+//         outline: none;
+//         border: 0;
+//         text-align: right;
+//       }
+//     }
+//   }
+// }
 
 .inline {
-  min-width: 150px;
+  min-width: 300px;
   display: inline-block;
   margin: 0;
   padding: 0;

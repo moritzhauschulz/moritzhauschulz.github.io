@@ -15,7 +15,7 @@ const Stats: React.FC = () => {
 
   const fetchData = useCallback(async () => {
     try {
-      const res = await fetch('https://api.github.com/repos/mldangelo/personal-site');
+      const res = await fetch('https://moritzhauschulz.github.io/');
       const resData: GitHubRepoData = await res.json();
 
       setResponseData(
