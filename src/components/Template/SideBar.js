@@ -25,13 +25,15 @@ const SideBar = () => (
         I&apos;m reading for my PhD (=DPhil)
         at the <a href="https://www.maths.ox.ac.uk/">University of Oxford</a>.
         I am interested in understanding the intersection of
-        machine learning, dynamical systems and stochastic processes. This includes generative diffusion processes,
+        machine learning, dynamical systems and stochastic processes.
+        This includes generative diffusion processes,
         how they relate to stochastic analysis,
         but also the use of machine learning for modeling real-world dynamical systems
         like weather and climate.
       </p>
       <p>
-        Before starting my PhD, I completed the MSc in Mathematical Sciences, during which I was lucky to be
+        Before starting my PhD, I completed the MSc in Mathematical Sciences,
+        during which I was lucky to be
         advised by <a href="https://www.maths.ox.ac.uk/people/georg.maierhofer"> Georg Maierhofer </a> and
         <a href="https://www.maths.ox.ac.uk/people/georg.maierhofer"> N</a>
         for my project on structure preserving operator learning.
