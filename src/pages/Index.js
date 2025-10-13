@@ -23,7 +23,7 @@ const Index = () => (
       </header>
       <p>
         {' '}
-        I am a student in mathematics with an interdisciplinary background. To know more, check out my {' '}
+        I am a PhD student on the Intelligent Earth CDT at the University of Oxford. I have an interdisciplinary background in Mathematics, Computing and Econometrics. To know more, check out my {' '}
         <Link to="/resume">resume</Link> and selected <Link to="/projects">projects</Link>. For collaborations, opportunities or if you just want to have a chat, feel free to {' '}
         <Link to="/contact">contact</Link> me.
       </p>

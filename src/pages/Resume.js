@@ -7,7 +7,7 @@ import Education from '../components/Resume/Education';
 import Research from '../components/Resume/Research';
 import Experience from '../components/Resume/Experience';
 import Skills from '../components/Resume/Skills';
-import Grades from '../components/Resume/Grades';
+// import Grades from '../components/Resume/Grades';
 import Courses from '../components/Resume/Other';
 import References from '../components/Resume/References';
 
@@ -16,7 +16,7 @@ import degrees from '../data/resume/degrees';
 import work from '../data/resume/work';
 import research from '../data/resume/research';
 import { skills, SkillCategories } from '../data/resume/skills';
-import { grades, GradeCategories } from '../data/resume/grades';
+// import { grades, GradeCategories } from '../data/resume/grades';
 
 // NOTE: sections are displayed in order defined.
 const sections = {
