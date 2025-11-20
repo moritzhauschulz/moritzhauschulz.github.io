@@ -25,8 +25,8 @@ export default function ContactPage() {
         </header>
         <div className="email-at">
           <p>
-            Feel free to get in touch. You can email me at:
-            <a href="mailto:moritz.hauschulz@reuben.ox.ac.uk"> moritz.hauschulz@reuben.ox.ac.uk</a>
+            Feel free to get in touch. You can email me at
+            <a href="mailto:moritz.hauschulz@reuben.ox.ac.uk"> moritz.hauschulz@reuben.ox.ac.uk</a>.
           </p>
         </div>
         <ContactIcons />
