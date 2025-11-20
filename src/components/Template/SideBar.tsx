@@ -48,8 +48,8 @@ const SideBar: React.FC = () => {
           the amazing people whom I helped build{' '}
           <a href="https://alexandria-media.org/">Alexandria </a>
           before starting my graduate studies. My work has been generously supported by the{' '}
-          <a href="https://www.sdw.org/index.html">sdw</a> for many years, and I had the privilege of
-          presiding over their UK group from 2023 to 2025.
+          <a href="https://www.sdw.org/index.html">sdw</a> for many years, and I had the privilege
+          of presiding over their UK group from 2023 to 2025.
         </p>
       </section>
 
