@@ -14,13 +14,6 @@ describe('Cell', () => {
     link: 'https://example.com',
   };
 
-  // it('renders project title with link', () => {
-  //   render(<Cell data={mockProject} />);
-  //   const titleLinks = screen.getAllByRole('link', { name: mockProject.title });
-  //   expect(titleLinks).toHaveLength(2); // Title link and image link
-  //   expect(titleLinks[0]).toHaveAttribute('href', mockProject.link);
-  // });
-
   it('renders project title with link', () => {
     render(<Cell data={mockProject} />);
     // Only one link is present in the DOM (the title)
@@ -38,12 +31,6 @@ describe('Cell', () => {
     expect(screen.getByText('January, 2023')).toBeInTheDocument();
   });
 
-  // it('renders project image with alt text', () => {
-  //   render(<Cell data={mockProject} />);
-  //   const image = screen.getByAltText(mockProject.title);
-  //   expect(image).toBeInTheDocument();
-  //   expect(image).toHaveAttribute('src', expect.stringContaining('test.jpg'));
-  // });
   it('renders an image when present (if the component exposes an <img>)', () => {
     render(<Cell data={mockProject} />);
     const image = screen.queryByAltText(mockProject.title);
@@ -53,7 +40,6 @@ describe('Cell', () => {
     } else {
       // If you don't want to require an <img>, assert that it's intentionally not in DOM
       expect(image).toBeNull();
-
     }
   });
 });
