@@ -39,7 +39,7 @@ const data: Project[] = [
     title: 'Discrete Flow Sampling with Trajectory Balance (Research Proposal)',
     subtitle: 'RESEARCH PROPOSAL',
     image: '/images/projects/TB_thumbnail.png',
-    link: '',
+    link: 'https://raw.githubusercontent.com/moritzhauschulz/moritzhauschulz.github.io/main/public/docs/Discrete_Flow_Sampling_with_Trajectory_Balance.pdf',
     date: '2024-11-01',
     desc: 'This proposal is based on insights from my research project on "Training Energy-Based Models by Learning to Sample with Discrete Flows."',
   },
