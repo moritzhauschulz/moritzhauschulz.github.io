@@ -6,8 +6,8 @@ import Link from 'next/link';
 import PageWrapper from './components/PageWrapper';
 
 export const metadata: Metadata = {
-  description:
-    'Moritz Hauschulz is a data scientist, machine learning engineer, and full-stack engineer.',
+  description: `Moritz Hauschulz is a PhD student on the Intelligent Earth CDT at the University of Oxford.
+He has an interdisciplinary background in mathematics, computing and econometrics.`,
 };
 
 export default function HomePage() {
