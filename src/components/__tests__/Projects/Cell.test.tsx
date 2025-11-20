@@ -8,7 +8,7 @@ describe('Cell', () => {
   const mockProject = {
     title: 'Test Project',
     subtitle: 'A test subtitle',
-    image: '/images/test.jpg',
+    image: '/images/me.jpg',
     date: '2023-01-01',
     desc: 'This is a test project description',
     link: 'https://example.com',
