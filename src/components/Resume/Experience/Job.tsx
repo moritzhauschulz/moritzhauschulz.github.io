@@ -20,7 +20,7 @@ const Job: React.FC<JobProps> = ({ data }) => {
             <a href={url} target="_blank" rel="noopener noreferrer">
               {name}
             </a>
-              ) : (
+          ) : (
             <span>{name}</span>
           )}{' '}
           - {position}
