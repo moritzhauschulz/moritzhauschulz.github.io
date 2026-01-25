@@ -17,12 +17,13 @@ const Job: React.FC<JobProps> = ({ data }) => {
       <header>
         <h4>
           {url ? (
-            <a href={url} target="_blank" rel="noopener noreferrer">
-              {name}
-            </a>
+        <a href={url} target="_blank" rel="noopener noreferrer">
+          {name}
+        </a>
           ) : (
-            <span>{name}</span>
-          )} - {position}
+        <span>{name}</span>
+          )}{' '}
+          - {position}
         </h4>
         <p className="daterange">
           {' '}
