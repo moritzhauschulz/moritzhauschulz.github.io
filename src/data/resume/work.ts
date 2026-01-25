@@ -4,7 +4,7 @@
 export interface Position {
   name: string;
   position: string;
-  url: string;
+  url?: string;
   startDate: string;
   endDate?: string;
   summary?: string;
@@ -27,9 +27,8 @@ const work: Position[] = [
     ],
   },
   {
-    name: 'Alexandria-Media',
+    name: 'Alexandria-Media Ltd.',
     position: 'Technical Product Owner',
-    url: '',
     startDate: '2022-10-01',
     endDate: '2023-09-30',
     summary:
@@ -37,7 +36,7 @@ const work: Position[] = [
     highlights: [
       'Shaped a shared vision within the engineering team, based on input from major UK and US studios',
       'Developed a modular framework to streamline the contracting workflow in the film industry in cooperation with major UK law firm',
-      'Drove the implementation of a digital twin agreement that is both private and cryptographically verifiable to all parties based on the [Hedera](https://hedera.com/) platform',
+      'Drove the implementation of a digital twin agreement that is both private and cryptographically verifiable to all parties based on the Hedera platform',
       'Built and launched MVP for showcase to new clients and investors',
     ],
   },
