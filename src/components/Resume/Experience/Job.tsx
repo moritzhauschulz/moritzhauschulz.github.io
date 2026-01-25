@@ -16,7 +16,13 @@ const Job: React.FC<JobProps> = ({ data }) => {
     <article className="jobs-container">
       <header>
         <h4>
-          <a href={url}>{name}</a> - {position}
+          {url ? (
+            <a href={url} target="_blank" rel="noopener noreferrer">
+              {name}
+            </a>
+          ) : (
+            <span>{name}</span>
+          )} - {position}
         </h4>
         <p className="daterange">
           {' '}
