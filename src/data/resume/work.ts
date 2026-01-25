@@ -29,7 +29,7 @@ const work: Position[] = [
   {
     name: 'Alexandria-Media',
     position: 'Technical Product Owner',
-    url: 'https://alexandria-media.org/',
+    url: '',
     startDate: '2022-10-01',
     endDate: '2023-09-30',
     summary:
