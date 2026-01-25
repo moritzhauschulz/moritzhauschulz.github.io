@@ -48,8 +48,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: '/images/me.jpg',
-        width: 1200,
-        height: 1200,
+        width: 713,
+        height: 713,
         alt: 'Moritz Hauschulz',
       },
     ],
