@@ -61,7 +61,7 @@ const work: Position[] = [
     url: 'https://www.kielinstitut.de/',
     startDate: '2019-06-01',
     endDate: '2019-08-30',
-        summary: 'Worked on consolidating and analyzing sovereign debt data using automated pipelines.',
+    summary: 'Worked on consolidating and analyzing sovereign debt data using automated pipelines.',
     highlights: [
       'Implemented a pre-processing pipeline for sovereign debt data from Thomson Reuters and Bloomberg.',
       'Automated data visualization strategies to identify anomalies in time series of debt volume.',
