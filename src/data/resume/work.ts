@@ -46,8 +46,14 @@ const work: Position[] = [
     url: 'https://cep.lse.ac.uk',
     startDate: '2020-10-01',
     endDate: '2022-11-30',
-    summary: 'See research experience above...',
-    highlights: [],
+    summary:
+      'Supported multiple research projects involving machine learning, econometrics, and geo-spatial modeling.',
+    highlights: [
+      'Developed an LSTM-based classifier to detect fraud schemes from smart contracts on decentralized networks.',
+      'Led a project on statistical methods used by the UK Government to assess police performance, producing an authored report.',
+      'Built geo-spatial models in Python and QGIS to simulate the impact of WWII bombs on housing stock in London.',
+      'Conducted instrumental variable regressions to identify the causal effect of social housing on crime rates.',
+    ],
   },
   {
     name: 'Kiel Institute',
@@ -55,8 +61,12 @@ const work: Position[] = [
     url: 'https://www.kielinstitut.de/',
     startDate: '2019-06-01',
     endDate: '2019-08-30',
-    summary: 'See research experience above...',
-    highlights: [],
+        summary: 'Worked on consolidating and analyzing sovereign debt data using automated pipelines.',
+    highlights: [
+      'Implemented a pre-processing pipeline for sovereign debt data from Thomson Reuters and Bloomberg.',
+      'Automated data visualization strategies to identify anomalies in time series of debt volume.',
+      'Presented a strategy for further consolidation of databases and introduced new team members to the codebase.',
+    ],
   },
 ];
 
